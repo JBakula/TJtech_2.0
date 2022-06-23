@@ -12,6 +12,6 @@ class ProizodiController extends Controller
         $data=[
             'proizvodi' => $proizvodi
         ];
-        return view('proizvodi.index');
+        return view('proizvodi.index', $data);
     }
 }

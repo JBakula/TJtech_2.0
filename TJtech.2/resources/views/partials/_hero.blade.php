@@ -16,7 +16,7 @@
                 <div>
                     @foreach ($kategorija as $item)
                         <a
-                        href="register.html"
+                        href="{{route('prikazProizvoda', $item->id)}}"
                         class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black"
                         >{{$item->Naziv_kategorije}}</a
                     >
