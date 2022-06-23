@@ -17,4 +17,4 @@ use App\Http\Controllers\KategorijeContoller;
 */
 
 Route::get('/', [KategorijeContoller::class,'index']);
-Route::get('/proizvodi',[ProizodiController::class,'index'])->name('prikazProizvoda');
+Route::get('/proizvodi/{id}',[ProizodiController::class,'index'])->name('prikazProizvoda');
